@@ -82,4 +82,45 @@ var game = {
   });
   
   },
+
+  nextQuestion: function(){
+    game.counter = timerCount;
+  
+    $('#counter-number').html(game.counter);
+  
+    game.currentQuestion++;
+  
+    game.loadQuestion();
+  },
+
+
+  timeUp: function (){
+    clearInterval(timer);
+
+    $('.content').fadeOut('slow');
+
+    var correctAnswer = questions[this.currentQuestion].correctAnswer;
+    var image = question[this.currentQuestion].image;
+
+    var resulthtml = '<h2>Out of Time! It was ' + correctAnswer + 
+                      '!</h2>' + '<img src="' + image + '" loop="infinite"/>';
+
+    $('.content').queue(function (next) {
+      $(this).empty();
+      $(this).append(resulthtml);
+      $(this).fadeIn('fast');
+      next();
+    });
+
+    if (game.currentQuestion === questions.length - 1){
+      setTimeout(game.results, 3000);
+    } else {
+      setTimeout(game.nextQuestion, 3000);
+    }
+  },
 }
+
+
+$(document).on('click', '#start', function(e) {
+  game.loadQuestion();
+});
