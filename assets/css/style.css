@@ -92,3 +92,14 @@ button:hover {
   border:2px solid blue;
   background: rgba(240, 240, 240, 1);
 }
+
+@media (max-width: 680px) { 
+  body {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 400px) { 
+  body {
+    font-size: 0.7em;
+  }
+}
