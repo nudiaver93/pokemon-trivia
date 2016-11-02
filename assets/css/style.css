@@ -7,3 +7,52 @@ html {
   background:  url(http://25.media.tumblr.com/tumblr_lwbyoeylMa1qhhvw2o1_r1_500.gif) no-repeat center center fixed; 
   background-size: cover;
 }
+
+.quiz{
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 8px solid grey;
+  width: 60%;
+  margin: 0px auto;
+  height: 350px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px black;
+}
+
+h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 5em;
+  padding-top: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  color: lightgrey;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-family: 'Indie Flower', cursive;
+  color: lightgrey;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2em;
+  margin-top: 15px;
+}
+
+button{
+  width: 150px;
+  height: 75px;
+  margin: 10px auto 0 auto;
+  border:none;
+  cursor: pointer;
+  background:transparent;
+  font-size: 42px;;
+  border:2px solid red;
+  background: rgba(240, 240, 240, 0.8);
+  font-family: 'Play', sans-serif;
+}
+
+button:hover {
+  border:2px solid blue;
+  background: rgba(240, 240, 240, 1);
+}
