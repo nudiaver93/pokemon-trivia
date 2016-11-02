@@ -1,0 +1,9 @@
+body {
+	height: 100%;
+	text-align: center;
+}
+
+html { 
+  background:  url(http://25.media.tumblr.com/tumblr_lwbyoeylMa1qhhvw2o1_r1_500.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
