@@ -38,4 +38,14 @@ var questions = [{
   answers: ["Dark and Ghost", "Dark and Steel", "Fairy and Steel", "Fairy and Ghost"],
   correctAnswer: "Dark and Steel",
   image:"assets/images/magneton.gif"
-}];a
+}];
+
+var timerCount = 30;
+
+var game = {
+  questions:questions,
+  currentQuestion: 1,
+  counter:timerCount,
+  correct:0,
+  incorrect:0,
+}
